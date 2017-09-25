@@ -7,6 +7,7 @@ class SquawksController < ApplicationController
   # GET /squawks.json
   def index
     @squawks = Squawk.all
+    @squawk = Squawk.new
   end
 
   # GET /squawks/1
@@ -16,7 +17,7 @@ class SquawksController < ApplicationController
 
   # GET /squawks/new
   def new
-    @squawk = Squawk.new
+    # @squawk = Squawk.new
   end
 
   # GET /squawks/1/edit
